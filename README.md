@@ -1,4 +1,4 @@
 # workspace
-This is a very long list of side projects I do to improve my knowledge. I try to complete at least one project every week.
+This project makes use of js for loops css transition, transform, ::before, ::after and flexbox.
 
-This main branch will only contain a readme file which shows which branch contains which project.
+<img src="./3d Boxes background.gif" alt="3d boxes gif" title="3d Boxes">
