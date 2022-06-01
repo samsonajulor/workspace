@@ -1,4 +1,6 @@
-# workspace
-This is a very long list of side projects I do to improve my knowledge.
+# Simple GraphQL Server
 
-#3D Boxes Background - HTML, CSS, JAVASCRIPT
+Graphql is used to query databases without rest just like soap, rdf.
+graphql is an implementation from facebook. It is used to create apis.
+It removes redundancy. Like finding a friend of a friend of a friend and deep down in that sense.
+what are restful apis? apollo, hasura, prisma all made implementation of graphql
