@@ -9,8 +9,8 @@ Preview
 
 
 
-<img src="./public/screenshotdark.png" alt="3d boxes gif" title="3d Boxes">
+<img src="./public/screenshotdark.png" alt="Light mode screenshot" title="Light mode screenshot">
 
 
-<img src="./public/screenshotlight.png" alt="3d boxes gif" title="3d Boxes">
+<img src="./public/screenshotlight.png" alt="Dark mode screenshot" title="Dark mode screenshot">
 
