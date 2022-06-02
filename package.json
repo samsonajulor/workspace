@@ -1,5 +1,5 @@
 {
-  "name": "lamadmin",
+  "name": "samsonadmindashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.8.2",
+    "firebase-tools": "^11.0.1",
     "react": "^17.0.2",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
