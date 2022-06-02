@@ -1,5 +1,3 @@
-# workspace
-This is a very long list of side projects I do to improve my knowledge.
+# React JS Dashboard with Light and Dark Mode
 
-- 3D Boxes Background - HTML, CSS, JAVASCRIPT
-- Graphql API - Typescript
+Implemented with reactJs, Redux, contextAPI, materialUI Icons, react charts
