@@ -35,12 +35,12 @@ const IMG = styled('img')(() => ({
 
 const JWTRoot = styled(JustifyBox)(() => ({
     background: '#1A2038',
-    minHeight: '100% !important',
     '& .card': {
         maxWidth: 800,
         borderRadius: 12,
         margin: '1rem',
     },
+    height: '100vh'
 }))
 
 const StyledProgress = styled(CircularProgress)(() => ({
