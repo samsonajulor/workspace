@@ -1,7 +1,6 @@
 {
-    "name": "matx-react",
-    "version": "3.0.0",
-    "private": true,
+    "name": "matx-dashboard-clone",
+    "version": "1.0.0",
     "dependencies": {
         "@auth0/auth0-spa-js": "^1.19.2",
         "@emotion/react": "^11.5.0",
