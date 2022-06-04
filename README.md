@@ -12,7 +12,6 @@ This is a replica of the real matx dashboard. Please view detailed description a
 <table>
 <tr>
 <th>MatX Free</th>
-<th>MatX Pro</th>
 </tr>
 <tr>
 <td>
