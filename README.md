@@ -7,3 +7,4 @@ List of Branches
 - JSfrontend/3d-boxes-background - HTML, CSS and JAVASCRIPT
 - api/simple-graphql-server - GraphQL and Typescript
 - ReactJSFrontend/dashboard-with-light-and-dark-mode - React, SASS, Material UI Icons, Redux, ContextAPI and React charts.
+- JSfrontend/navbar-with-transition-effect  HTML, CSS and JAVASCRIPT
