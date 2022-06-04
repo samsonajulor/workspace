@@ -1,7 +1,7 @@
 # matx-login-register-clone
 
-To access the login page use the following http://<baseurl>/session/signin
-To access the registration page use the following http://<baseurl>/session/signup
+To access the login page use the following http://https://samosky-login-signup-matx.web.app/session/signin
+To access the registration page use the following http://https://samosky-login-signup-matx.web.app/session/signup
 
 This is a replica of the real matx dashboard. Please view detailed description and download the original version below
 
