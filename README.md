@@ -1,9 +1,77 @@
-# workspace
-This is a very long list of side projects I do to improve my knowledge.
+# matx-dashboard-clone
 
-Check dedicated branch for complete code.
+This is a replica of the real matx dashboard. Please view detailed description and download the original version below
 
-List of Branches
-- JSfrontend/3d-boxes-background - HTML, CSS and JAVASCRIPT
-- api/simple-graphql-server - GraphQL and Typescript
-- ReactJSFrontend/dashboard-with-light-and-dark-mode - React, SASS, Material UI Icons, Redux, ContextAPI and React charts.
+<h1><a href="https://ui-lib.com/downloads/matx-react-dashboard/">Matx React Material Design Admin Dashboard Template</a></h1>
+
+<a href="https://matx-react-free.vercel.app/"><img alt="Matx React Admin" src="https://ui-lib.com/blog/wp-content/uploads/2021/09/matx-github.png" /></a>
+
+<p>MatX is a full-featured React Material UI Admin Dashboard template. MatX is built with React, Redux & Material UI We implemented all the features you might need to start a new Web application. The free version includes all Material UI components, Form elements, and validation, JWT authentication, Sign in, sign up pages,  Vertical navigation, Lazy loading, Code splitting.</p>
+
+<h2>Features</h2>
+<table>
+<tr>
+<th>MatX Free</th>
+<th>MatX Pro</th>
+</tr>
+<tr>
+<td>
+<a href="https://matx-react-free.vercel.app/">Live Preview</a> <br>
+<a href="https://ui-lib.com/downloads/matx-react-dashboard/">Download MatX</a>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<ul>
+  <li>JWT authentication</li>
+  <li>Role based authentication</li>
+  <li>Lazy loading components</li>
+  <li>Code splitting</li>
+  <li>Dashboard Analytics</li>
+  <li>UI kits
+    <ul>
+      <li>Autocomplete</li>
+      <li>Buttons</li>
+      <li>Checkbox</li>
+      <li>Dialog</li>
+      <li>Expansion panel</li>
+      <li>Menu</li>
+      <li>Progress</li>
+      <li>Datetime picker</li>
+      <li>Radio</li>
+      <li>Switch</li>
+      <li>Slider</li>
+      <li>Snackbar</li>
+      <li>Data table</li>
+    </ul>
+  </li>
+  <li>Forms
+    <ul>
+      <li>Basic</li>
+      <li>Rich text editor</li>
+    </ul>
+  </li>
+  <li>eChart</li>
+  <li>Session pages
+    <ul>
+      <li>Sign in</li>
+      <li>Sign up</li>
+      <li>Forgot password</li>
+      <li>Error page</li>
+    </ul>
+  </li>
+  <li>Drag and drop</li>
+  <li>Google map</li>
+  <li>Utilities
+    <ul>
+      <li>Color</li>
+      <li>Spacing</li>
+      <li>Typography</li>
+      <li>Display</li>
+    </ul>
+  </li>
+  <li>Multi level menu</li>
+</ul>
+</td>
+</tr>
+</table>
