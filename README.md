@@ -8,5 +8,5 @@ List of Branches
 - api/simple-graphql-server - GraphQL and Typescript
 - ReactJSFrontend/dashboard-with-light-and-dark-mode - React, SASS, Material UI Icons, Redux, ContextAPI and React charts.
 - JSfrontend/navbar-with-transition-effect  HTML, CSS and JAVASCRIPT
-- ReactJSFrontend/matx-dashboard-clone
+- ReactJSFrontend/matx-dashboard-clone - Material UI components, Form elements, and validation, JWT authentication, Sign in, sign up pages, Vertical navigation, Lazy loading, Code splitting, redux, google map, drag and drop, context api, dashboard analytics.
 - ReactJSFrontend/matx-login-and-signup-page
