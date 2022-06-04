@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# matx-login-register-clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a replica of the real matx dashboard. Please view detailed description and download the original version below
 
-## Available Scripts
+<h1><a href="https://ui-lib.com/downloads/matx-react-dashboard/">Matx React Material Design Admin Dashboard Template</a></h1>
 
-In the project directory, you can run:
+<a href="https://matx-react-free.vercel.app/"><img alt="Matx React Admin" src="https://ui-lib.com/blog/wp-content/uploads/2021/09/matx-github.png" /></a>
 
-### `npm start`
+<p>MatX is a full-featured React Material UI Admin Dashboard template. MatX is built with React, Redux & Material UI We implemented all the features you might need to start a new Web application. The free version includes all Material UI components, Form elements, and validation, JWT authentication, Sign in, sign up pages,  Vertical navigation, Lazy loading, Code splitting.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Features</h2>
+<table>
+<tr>
+<th>MatX Free</th>
+</tr>
+<tr>
+<td>
+<a href="https://matx-react-free.vercel.app/">Live Preview</a> <br>
+<a href="https://ui-lib.com/downloads/matx-react-dashboard/">Download MatX</a>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<ul>
+  <li>JWT authentication</li>
+  <li>Role based authentication</li>
+  <li>Lazy loading components</li>
+  <li>Code splitting</li>
+  <li>Dashboard Analytics</li>
+  <li>UI kits
+    <ul>
+      <li>Autocomplete</li>
+      <li>Buttons</li>
+      <li>Checkbox</li>
+      <li>Dialog</li>
+      <li>Expansion panel</li>
+      <li>Menu</li>
+      <li>Progress</li>
+      <li>Datetime picker</li>
+      <li>Radio</li>
+      <li>Switch</li>
+      <li>Slider</li>
+      <li>Snackbar</li>
+      <li>Data table</li>
+    </ul>
+  </li>
+  <li>Forms
+    <ul>
+      <li>Basic</li>
+      <li>Rich text editor</li>
+    </ul>
+  </li>
+  <li>eChart</li>
+  <li>Session pages
+    <ul>
+      <li>Sign in</li>
+      <li>Sign up</li>
+      <li>Forgot password</li>
+      <li>Error page</li>
+    </ul>
+  </li>
+  <li>Drag and drop</li>
+  <li>Google map</li>
+  <li>Utilities
+    <ul>
+      <li>Color</li>
+      <li>Spacing</li>
+      <li>Typography</li>
+      <li>Display</li>
+    </ul>
+  </li>
+  <li>Multi level menu</li>
+</ul>
+</td>
+</tr>
+</table>
