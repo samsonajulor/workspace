@@ -59,7 +59,7 @@ const ForgotPassword = () => {
                     <Grid item lg={5} md={5} sm={5} xs={12}>
                         <JustifyBox p={4} height="100%">
                             <IMG
-                                src="/assets/images/illustrations/dreamer.svg"
+                                src="/assets/images/dreamer.svg"
                                 alt=""
                             />
                         </JustifyBox>

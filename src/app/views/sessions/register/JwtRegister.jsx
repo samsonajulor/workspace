@@ -65,7 +65,7 @@ const JwtRegister = () => {
                     <Grid item lg={5} md={5} sm={5} xs={12}>
                         <ContentBox>
                             <IMG
-                                src="/assets/images/illustrations/posting_photo.svg"
+                                src="/assets/images/posting_photo.svg"
                                 alt=""
                             />
                         </ContentBox>
