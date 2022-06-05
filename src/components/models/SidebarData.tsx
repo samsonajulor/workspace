@@ -20,11 +20,11 @@ export const SidebarPrimaryData: SidebarItem[] = [
     iconOpened: <IoIcons.IoIosArrowUp />,
     subnav: [
       {
-        title: "Catalogue 1",
+        title: "Something",
         path: "#",
       },
       {
-        title: "Catalogue 2",
+        title: "Another thing",
         path: "#",
       },
     ],

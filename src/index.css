@@ -6,5 +6,28 @@ body {
   font-family: 'Noto Sans HK', 'Source Sans Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+/* take out the scroll bar code */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Carousel__Image {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+} 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Carousel__Image::-webkit-scrollbar {
+  display: none;
+}

@@ -2,15 +2,17 @@ import * as React from "react";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiDrawer from "@mui/material/Drawer";
-import Box from "@mui/material/Box";
+import {
+  Box,
+  Toolbar,
+  Typography,
+  List,
+  Divider,
+  IconButton,
+  Badge,
+  Container,
+} from '@mui/material';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Badge from "@mui/material/Badge";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { Stack } from "@mui/material";
@@ -112,163 +114,148 @@ function Dashboard() {
   };
 
   return (
-    <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: "flex", height: "100vh" }}>
-        <CssBaseline />
-        {/* APPBAR */}
-        <AppBar position="absolute" open={open} color="inherit" elevation={0}>
-          <Toolbar
-            sx={{
-              pr: "24px", // keep right padding when drawer closed
-            }}
-          >
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              onClick={toggleDrawer}
+    <div className='Carousel__Image'>
+      <ThemeProvider theme={mdTheme}>
+        <Box sx={{ display: 'flex', height: '100vh' }}>
+          <CssBaseline />
+          {/* APPBAR */}
+          <AppBar position='absolute' open={open} color='inherit' elevation={0}>
+            <Toolbar
               sx={{
-                marginRight: "36px",
-                ...(open && { display: "none" }),
+                pr: '24px', // keep right padding when drawer closed
               }}
             >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              component="h1"
-              variant="h6"
-              color="inherit"
-              noWrap
-              sx={{ flexGrow: 1 }}
-            >
-              Dashboard
-            </Typography>
-            <IconButton color="inherit" sx={{ px: [3] }}>
-              <Badge badgeContent={2} color="secondary">
-                <HiOutlineLightningBolt
-                  style={{ marginRight: "5px" }}
-                  color="#103B66"
-                />
-                <Typography
-                  variant="body1"
-                  sx={{ color: (theme) => theme.customProps.color }}
-                >
-                  What's new
-                </Typography>
-              </Badge>
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        {/* SIDEBAR */}
-        <Drawer variant="permanent" open={open} sx={{}}>
-          <Toolbar
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              px: [2, 3],
-            }}
-          >
-            {open && <img src={logo} alt="logo" />}
-            <IconButton onClick={toggleDrawer}>
-              {open && <MenuIcon />}
-            </IconButton>
-          </Toolbar>
-          {/* SIDEBAR MENU ITEMS */}
-          <List component="nav">
-            {SidebarPrimaryData.map((item: SidebarItem, index: number) => (
-              <SubmenuItem item={item} key={index} open={open} />
-            ))}
-            <Divider sx={{ my: 1 }} />
-            {SidebarSecondaryData.map((item: SidebarItem, index: number) => (
-              <SubmenuItem item={item} key={index} open={open} />
-            ))}
-          </List>
-          {/* SIDEBAR SELECT INPUT */}
-          {open && (
-            <Stack
-              sx={{
-                marginTop: "3rem",
-                mx: [2],
-                paddingBottom: "9rem",
-              }}
-            >
-              <Typography variant="body1" sx={{ fontWeight: "normal", py: 1 }}>
-                Select your shop
-              </Typography>
-              <SelectInput />
-            </Stack>
-          )}
-        </Drawer>
-        {/* MAIN CONTENT AREA */}
-        <Box
-          component="main"
-          sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[100]
-                : theme.palette.grey[900],
-            flexGrow: 1,
-            height: "100vh",
-            overflow: "auto",
-          }}
-        >
-          <Toolbar />
-          <Box
-            sx={{
-              background:
-                "linear-gradient(180deg, #21B8F9 0%, rgba(33, 184, 249, 0) 132.05%)",
-              height: "182px",
-              px: [3],
-            }}
-          >
-            <Box
-              sx={{
-                py: [5, 5],
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                color: "white",
-              }}
-              maxWidth="xl"
-            >
-              <Typography variant="h4">Welcome Mario!</Typography>
-              <Box
+              <IconButton
+                edge='start'
+                color='inherit'
+                aria-label='open drawer'
+                onClick={toggleDrawer}
                 sx={{
-                  py: [2],
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  color: "white",
+                  marginRight: '36px',
+                  ...(open && { display: 'none' }),
                 }}
               >
-                <Link
-                  href="#"
-                  sx={{ color: "white", textDecoration: "underline", px: [3] }}
+                <MenuIcon />
+              </IconButton>
+              <Typography component='h1' variant='h6' color='inherit' noWrap sx={{ flexGrow: 1 }}>
+                Dashboard
+              </Typography>
+              <IconButton color='inherit' sx={{ px: [3] }}>
+                <Badge badgeContent={2} color='secondary'>
+                  <HiOutlineLightningBolt style={{ marginRight: '5px' }} color='#103B66' />
+                  <Typography variant='body1' sx={{ color: (theme) => theme.customProps.color }}>
+                    What's new
+                  </Typography>
+                </Badge>
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+          {/* SIDEBAR */}
+          <Drawer variant='permanent' open={open} sx={{}}>
+            <Toolbar
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                px: [2, 3],
+              }}
+            >
+              {open && <img src={logo} alt='logo' />}
+              <IconButton onClick={toggleDrawer}>{open && <MenuIcon />}</IconButton>
+            </Toolbar>
+            {/* SIDEBAR MENU ITEMS */}
+            <List component='nav'>
+              {SidebarPrimaryData.map((item: SidebarItem, index: number) => (
+                <SubmenuItem item={item} key={index} open={open} />
+              ))}
+              <Divider sx={{ my: 1 }} />
+              {SidebarSecondaryData.map((item: SidebarItem, index: number) => (
+                <SubmenuItem item={item} key={index} open={open} />
+              ))}
+            </List>
+            {/* SIDEBAR SELECT INPUT */}
+            {open && (
+              <Stack
+                sx={{
+                  marginTop: '3rem',
+                  mx: [2],
+                  paddingBottom: '9rem',
+                }}
+              >
+                <Typography variant='body1' sx={{ fontWeight: 'normal', py: 1 }}>
+                  Select your shop
+                </Typography>
+                <SelectInput />
+              </Stack>
+            )}
+          </Drawer>
+          {/* MAIN CONTENT AREA */}
+          <Box
+            component='main'
+            sx={{
+              backgroundColor: (theme) =>
+                theme.palette.mode === 'light' ? theme.palette.grey[100] : theme.palette.grey[900],
+              flexGrow: 1,
+              height: '100vh',
+              overflow: 'auto',
+            }}
+          >
+            <Toolbar />
+            <Box
+              sx={{
+                background: 'linear-gradient(180deg, #21B8F9 0%, rgba(33, 184, 249, 0) 132.05%)',
+                height: '182px',
+                px: [3],
+              }}
+            >
+              <Box
+                sx={{
+                  py: [5, 5],
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  color: 'white',
+                }}
+                maxWidth='xl'
+              >
+                <Typography variant='h4'>Welcome Mario!</Typography>
+                <Box
+                  sx={{
+                    py: [2],
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    color: 'white',
+                  }}
                 >
-                  app.vetrinalive.it/fenoh-store
-                </Link>
-                <OpenInNewIcon />
+                  <Link
+                    href='https://github.com/samsonajulor/workspace/tree/ReactTSFrontend/vetrina-dashboard-clone'
+                    sx={{ color: 'white', textDecoration: 'underline', px: [3] }}
+                  >
+                    view code on github
+                  </Link>
+                  <OpenInNewIcon />
+                </Box>
               </Box>
             </Box>
+            <Container maxWidth='xl' sx={{ mt: -9, mb: 4 }}>
+              <Grid container columns={16} spacing={2}>
+                <Grid item xs={16} md={12} lg={11} xl={11}>
+                  <VisitorsAndOrders />
+                  <MarketDemoPlace />
+                  <Stack sx={{ backgroundColor: 'white' }} spacing={2}>
+                    <AllNewsList />
+                  </Stack>
+                </Grid>
+                <Grid item xs={16} md={3} lg={2} xl={5}>
+                  <RightSection />
+                </Grid>
+              </Grid>
+            </Container>
           </Box>
-          <Container maxWidth="xl" sx={{ mt: -9, mb: 4 }}>
-            <Grid container columns={16} spacing={2}>
-              <Grid item xs={16} md={12} lg={11} xl={11}>
-                <VisitorsAndOrders />
-                <MarketDemoPlace />
-                <Stack sx={{ backgroundColor: "white" }} spacing={2}>
-                  <AllNewsList />
-                </Stack>
-              </Grid>
-              <Grid item xs={16} md={3} lg={2} xl={5}>
-                <RightSection />
-              </Grid>
-            </Grid>
-          </Container>
         </Box>
-      </Box>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   );
 }
 
