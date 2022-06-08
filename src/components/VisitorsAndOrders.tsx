@@ -3,6 +3,49 @@ import { AiOutlineEye, AiOutlineUnorderedList } from 'react-icons/ai';
 import VisitorsOrdersContainer from './VisitorsOrdersContainer';
 
 const VisitorsAndOrders = () => {
+  const styles = {
+    h4: {
+      fontSize: '2rem',
+      color: '#103B66',
+      fontWeight: '700',
+    },
+    stackOne: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginRight: '1rem',
+    },
+    typoOne: {
+      fontSize: '1rem',
+      color: '#103B66',
+      fontWeight: '400',
+    },
+    typoTwo: {
+      fontSize: '1rem',
+      color: '#103B66',
+      fontWeight: '700',
+    },
+    stackTwo: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginRight: '1rem',
+    },
+    typoThree: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginRight: '1rem',
+    },
+    typoFour: {
+      fontSize: '1rem',
+      color: '#103B66',
+      fontWeight: '700',
+    },
+  };
   return (
     <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
       <Grid item xs={16} data-testid="visitors">
@@ -16,11 +59,7 @@ const VisitorsAndOrders = () => {
         >
           <Typography
             variant="h4"
-            sx={{
-              fontSize: "2rem",
-              color: "#103B66",
-              fontWeight: "700",
-            }}
+            sx={styles.h4}
           >
             1824
           </Typography>
@@ -36,61 +75,33 @@ const VisitorsAndOrders = () => {
           readMoreLink="10 free tips to increase your sales"
         >
           <Stack
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginRight: "1rem",
-            }}
+            sx={styles.stackOne}
           >
             <Typography
               variant="body1"
-              sx={{
-                fontSize: "1rem",
-                color: "#103B66",
-                fontWeight: "400",
-              }}
+              sx={styles.typoOne}
             >
               Orders received:
             </Typography>
             <Typography
               variant="body1"
-              sx={{
-                fontSize: "1rem",
-                color: "#103B66",
-                fontWeight: "700",
-              }}
+              sx={styles.typoTwo}
             >
               156
             </Typography>
           </Stack>
           <Stack
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginRight: "1rem",
-            }}
+            sx={styles.stackTwo}
           >
             <Typography
               variant="body1"
-              sx={{
-                fontSize: "1rem",
-                color: "#103B66",
-                fontWeight: "400",
-              }}
+              sx={styles.typoThree}
             >
               Earnings:
             </Typography>
             <Typography
               variant="body1"
-              sx={{
-                fontSize: "1rem",
-                color: "#103B66",
-                fontWeight: "700",
-              }}
+              sx={styles.typoFour}
             >
               € 1893, 24
             </Typography>

@@ -6,8 +6,10 @@ import VisitorsOrdersContainer from './VisitorsOrdersContainer';
 import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 
 const url =
-  "https://newsapi.org/v2/everything?q=Apple&from=2022-05-29&sortBy=popularity&pageSize=8&apiKey=f8123501fb024c38b837b5cedb8ce9d4";
-
+    'https://newsapi.org/v2/everything?q=Apple&from=2022-05-29&sortBy=popularity&pageSize=8&apiKey=f8123501fb024c38b837b5cedb8ce9d4',
+  styles = {
+    icon: { color: '#103B66', width: '1.5rem' },
+  };
 
 export const AllNewsList = () => {
    const state = useFetch(url);
@@ -15,7 +17,7 @@ export const AllNewsList = () => {
     <VisitorsOrdersContainer
       cardLable="All News"
       hasDate={false}
-      Icon={<FeedOutlinedIcon sx={{ color: "#103B66", width: "1.5rem" }} />}
+      Icon={<FeedOutlinedIcon sx={styles.icon} />}
       hasReadMoreArrow={false}
       hasTopRightUrl={true}
     >

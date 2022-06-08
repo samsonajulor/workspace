@@ -39,6 +39,13 @@ const NewsCard = () => {
   console.log("NewsCard Rerndering");
 
   const { state } = useContext<any>(NewsContext);
+  const styles = {
+    card: { display: 'flex', borderRadius: '0px' },
+    skeleton: { bgcolor: 'grey.900' },
+    cardMedia: { width: 151 },
+    box: { display: 'flex', flexDirection: 'column' },
+    cardContent: { flex: '1 0 auto', maxWidth: '256.56px' },
+  };
 
   const loading = state.isLoading;
   const error = state.error && <div>{state.error}</div>;
@@ -46,10 +53,10 @@ const NewsCard = () => {
     state.data &&
     state.data.map((item: PayloadType, index: number) => (
       <Grid item xs={16} lg={8} columnSpacing={2} key={index} >
-        <Card elevation={0} sx={{ display: "flex", borderRadius: "0px" }} >
+        <Card elevation={0} sx={styles.card} >
           {loading ? (
             <Skeleton
-              sx={{ bgcolor: "grey.900" }}
+              sx={styles.skeleton}
               variant="rectangular"
               width={210}
               height={118}
@@ -57,18 +64,18 @@ const NewsCard = () => {
           ) : (
             <CardMedia
               component="img" 
-              sx={{ width: 151 }}
+              sx={styles.cardMedia}
               image={item.urlToImage}
               alt={item.title}
             />
           )}
 
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <CardContent sx={{ flex: "1 0 auto", maxWidth: "256.56px" }}>
+          <Box sx={styles.box}>
+            <CardContent sx={styles.cardContent}>
               <CardTitle>
                 {loading ? (
                   <Skeleton
-                    sx={{ bgcolor: "grey.900" }}
+                    sx={styles.skeleton}
                     variant="rectangular"
                     width={210}
                     height={118}
@@ -80,7 +87,7 @@ const NewsCard = () => {
               <CardText>
                 {loading ? (
                   <Skeleton
-                    sx={{ bgcolor: "grey.900" }}
+                    sx={styles.skeleton}
                     variant="rectangular"
                     width={210}
                     height={118}
@@ -97,7 +104,7 @@ const NewsCard = () => {
               >
                 {loading ? (
                   <Skeleton
-                    sx={{ bgcolor: "grey.900" }}
+                    sx={styles.skeleton}
                     variant="rectangular"
                     width={210}
                     height={118}

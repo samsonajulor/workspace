@@ -1,31 +1,33 @@
 import { Card, CardActionArea, CardActions, CardContent, Grid, Stack } from '@mui/material';
 import { CgExtensionAdd } from 'react-icons/cg';
 import ExtensionCard from './ExtensionCard';
-import ProductAdvert from './ProductAdvert';
+import ProductCard from './ProductCard';
 import VisitorsOrdersContainer from './VisitorsOrdersContainer';
 // images
 import AppStore from "../assets/appStore.png";
 import GooglePlay from "../assets/googlePlay.png";
 
 
-const MarketDemoPlace = () => {
+const MarketCard = () => {
+  const styles = {
+    card: { maxWidth: '100%', marginBottom: 2, backgroundColor: '#F3A35C' },
+    cardActions: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-evenly',
+      alignItems: 'center',
+    },
+  };
   return (
     <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
       <Grid item xs={16}>
-        <Card sx={{ maxWidth: '100%', marginBottom: 2, backgroundColor: '#F3A35C' }}>
+        <Card sx={styles.card}>
           <CardActionArea>
             <CardContent>
-              <ProductAdvert />
+              <ProductCard />
             </CardContent>
           </CardActionArea>
-          <CardActions
-            sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-evenly',
-              alignItems: 'center',
-            }}
-          >
+          <CardActions sx={styles.cardActions}>
             <img src={AppStore} alt='appStore' />
             <img src={GooglePlay} alt='GooglePlay' />
           </CardActions>
@@ -47,4 +49,4 @@ const MarketDemoPlace = () => {
   );
 }
 
-export default MarketDemoPlace
+export default MarketCard;

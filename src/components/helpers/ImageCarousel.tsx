@@ -68,14 +68,19 @@ const itemData = [
     desc: 'southside_customs',
   },
 ];
+const styles = {
+  imageList: { border: 'none', width: '25rem' },
+  image: { width: '152px', height: '150px' },
+  imageListItemBar: { gap: '2px', textAlign: 'left', fontSize: '17px', color: '#103B66' },
+};
 
 export default function StickyHeadTable() {
   return (
-    <ImageList sx={{border: 'none', width: '25rem'}} className='Carousel__Image' cols={itemData.length} gap={110}>
+    <ImageList sx={styles.imageList} className='Carousel__Image' cols={itemData.length} gap={110}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
-            style={{ width: '152px', height: '150px' }}
+            style={styles.image}
             src={`${item.img}?w=248&fit=crop&auto=format`}
             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
@@ -84,7 +89,7 @@ export default function StickyHeadTable() {
           <ImageListItemBar
             subtitle={<span>{item.desc}</span>}
             position='below'
-            sx={{ gap: '2px', textAlign: 'left', fontSize: '17px', color: '#103B66' }}
+            sx={styles.imageListItemBar}
           />
         </ImageListItem>
       ))}

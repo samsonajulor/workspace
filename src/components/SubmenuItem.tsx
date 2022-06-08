@@ -54,6 +54,11 @@ const SubmenuItem: FC<SubmenuItemProps> = ({ item, open }) => {
   const toggleSubnav = () => {
     setHasSubnav(!hasSubnav);
   };
+  const styles = {
+    sdmlabel: { paddingTop: '.2em' },
+    item: { backgroundColor: '#E9F8FE' },
+    subnav: { paddingLeft: '2.3rem' },
+  };
   
 
   return (
@@ -61,7 +66,7 @@ const SubmenuItem: FC<SubmenuItemProps> = ({ item, open }) => {
       <StyledLink to={item.path} onClick={toggleSubnav}>
         <Stack direction="row">
           <StyledIcon>{item.icon}</StyledIcon>
-          <SideMenuLabel sx={{ paddingTop: ".2em" }}>
+          <SideMenuLabel sx={styles.sdmlabel}>
             {open && item.title}
           </SideMenuLabel>
         </Stack>
@@ -79,9 +84,9 @@ const SubmenuItem: FC<SubmenuItemProps> = ({ item, open }) => {
           <StyledLink
             key={index}
             to={subitem.path}
-            sx={{ backgroundColor: "#E9F8FE" }}
+            sx={styles.item}
           >
-            <SideMenuLabel sx={{ paddingLeft: "2.3rem" }}>
+            <SideMenuLabel sx={styles.subnav}>
               {subitem.title}
             </SideMenuLabel>
           </StyledLink>

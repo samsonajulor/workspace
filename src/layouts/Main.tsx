@@ -28,10 +28,10 @@ import logo from "../assets/logo.svg";
 import { Link } from "@mui/material";
 import SubmenuItem from "../components/SubmenuItem";
 import SelectInput from "../components/SelectInput";
-import RightSection from "../components/RightSection";
+import RightContent from '../components/RightContent';
 import {AllNewsList} from "../components/AllNewsList";
 import VisitorsAndOrders from "../components/VisitorsAndOrders";
-import MarketDemoPlace from "../components/MarketDemoPlace";
+import MarketCard from '../components/MarketCard';
 
 
 const drawerWidth: number = 255;
@@ -242,13 +242,13 @@ function Dashboard() {
               <Grid container columns={16} spacing={2}>
                 <Grid item xs={16} md={12} lg={11} xl={11}>
                   <VisitorsAndOrders />
-                  <MarketDemoPlace />
+                  <MarketCard />
                   <Stack sx={{ backgroundColor: 'white' }} spacing={2}>
                     <AllNewsList />
                   </Stack>
                 </Grid>
                 <Grid item xs={16} md={3} lg={2} xl={5}>
-                  <RightSection />
+                  <RightContent />
                 </Grid>
               </Grid>
             </Container>

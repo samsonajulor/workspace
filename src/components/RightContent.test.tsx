@@ -2,15 +2,15 @@ import { render, screen } from "@testing-library/react";
 import VisitorsOrdersContainer from "./VisitorsOrdersContainer";
 import { MemoryRouter } from "react-router-dom";
 import MockTheme from "../mocks/MockTheme";
-import RightSection from "./RightSection";
+import RightContent from './RightContent';
 
-describe("RightSection", () => {
+describe("Content", () => {
   it("renders  Configure your shop component", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable="Configure your shop">
-            <RightSection />
+          <VisitorsOrdersContainer cardLable='Configure your shop'>
+            <RightContent />
           </VisitorsOrdersContainer>
         </MockTheme>
       </MemoryRouter>
@@ -24,8 +24,8 @@ describe("RightSection", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable="Trustpilot">
-            <RightSection />
+          <VisitorsOrdersContainer cardLable='Trustpilot'>
+            <RightContent />
           </VisitorsOrdersContainer>
         </MockTheme>
       </MemoryRouter>
@@ -37,8 +37,8 @@ describe("RightSection", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable="Invite friend">
-            <RightSection />
+          <VisitorsOrdersContainer cardLable='Invite friend'>
+            <RightContent />
           </VisitorsOrdersContainer>
         </MockTheme>
       </MemoryRouter>
@@ -52,8 +52,8 @@ describe("RightSection", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable="Customer support">
-            <RightSection />
+          <VisitorsOrdersContainer cardLable='Customer support'>
+            <RightContent />
           </VisitorsOrdersContainer>
         </MockTheme>
       </MemoryRouter>

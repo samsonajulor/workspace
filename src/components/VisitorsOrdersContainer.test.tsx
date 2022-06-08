@@ -3,7 +3,7 @@ import VisitorsOrdersContainer from "./VisitorsOrdersContainer";
 import { MemoryRouter } from "react-router-dom";
 import MockTheme from "../mocks/MockTheme";
 import VisitorsAndOrders from "./VisitorsAndOrders";
-import MarketDemoPlace from "./MarketDemoPlace";
+import MarketCard from './MarketCard';
 
 describe("VisitorsOrdersContainer", () => {
   it("renders visitorsAndOrders component with props", () => {
@@ -21,17 +21,17 @@ describe("VisitorsOrdersContainer", () => {
     expect(screen.getByTestId("orders")).toBeInTheDocument();
   });
     
-  it("renders MarketDemoPlace component with props", () => {
+  it('renders MarketCard component with props', () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable="Visitors">
-            <MarketDemoPlace />
+          <VisitorsOrdersContainer cardLable='Visitors'>
+            <MarketCard />
           </VisitorsOrdersContainer>
         </MockTheme>
       </MemoryRouter>
     );
-    expect(screen.getByTestId("extensions-marketplace")).toBeInTheDocument();
+    expect(screen.getByTestId('extensions-marketplace')).toBeInTheDocument();
   });
   
 });
