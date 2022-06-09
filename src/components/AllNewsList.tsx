@@ -1,8 +1,8 @@
 import { Grid } from '@mui/material'
 import { NewsContextProvider } from '../context/NewsContext';
-import NewsCard from './NewsCard'
+import NewsCard from './cards/NewsCard'
 import { useFetch } from "../customHooks/useFetch";
-import VisitorsOrdersContainer from './VisitorsOrdersContainer';
+import CardsContainer from './CardsContainer';
 import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 
 const url =
@@ -11,10 +11,14 @@ const url =
     icon: { color: '#103B66', width: '1.5rem' },
   };
 
+/**
+ * 
+ * @returns 
+ */
 export const AllNewsList = () => {
    const state = useFetch(url);
   return (
-    <VisitorsOrdersContainer
+    <CardsContainer
       cardLable="All News"
       hasDate={false}
       Icon={<FeedOutlinedIcon sx={styles.icon} />}
@@ -26,6 +30,6 @@ export const AllNewsList = () => {
           <NewsCard />
         </Grid>
       </NewsContextProvider>
-    </VisitorsOrdersContainer>
+    </CardsContainer>
   );
 }

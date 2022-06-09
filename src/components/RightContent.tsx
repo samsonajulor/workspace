@@ -1,8 +1,8 @@
 import { Avatar, Button, Stack, styled, Typography } from '@mui/material';
 import { FiHeadphones, FiUsers } from 'react-icons/fi';
 import { TiSpannerOutline } from "react-icons/ti";
-import TextTruncate from "./TextTruncate/TextTruncate";
-import VisitorsOrdersContainer from './VisitorsOrdersContainer';
+import Trimmer from './Trimmer/Trimmer';
+import CardsContainer from './CardsContainer';
 import Star from "../assets/star.svg";
 import UserImage from "../assets/user.webp";
 
@@ -47,11 +47,29 @@ const styles = {
     color: 'white',
     fontSize: '1.5rem',
   },
+  stackOne: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginBottom: '1rem',
+  },
+  stackTwo: {
+    fontSize: '15px',
+    color: '#103B66',
+    fontWeight: '400',
+  },
+  span: { color: '#00C48C' },
 };
+
+/**
+ * 
+ * @returns 
+ */
 const RightContent = () => {
   return (
     <>
-      <VisitorsOrdersContainer
+      <CardsContainer
         cardLable='Configure your shop'
         hasDate={false}
         Icon={<TiSpannerOutline size={25} color='#103B66' />}
@@ -63,10 +81,10 @@ const RightContent = () => {
         </Typography>
         <Typography sx={styles.h5}>Completed</Typography>
         <Typography sx={{ mt: '1rem' }} component='div'>
-          <TextTruncate text='Complete all the steps to have a complete shop to best present your customers' />
+          <Trimmer text='Complete all the steps to have a complete shop to best present your customers' />
         </Typography>
-      </VisitorsOrdersContainer>
-      <VisitorsOrdersContainer
+      </CardsContainer>
+      <CardsContainer
         backgroundColor='#000032'
         image={Star}
         LabelColor='#00C48C'
@@ -79,8 +97,8 @@ const RightContent = () => {
           Show us your love by leaving a <span style={styles.positive}>positive</span> review on
           trust pilot and receive the extension of <strong>50 additional products</strong>
         </Typography>
-      </VisitorsOrdersContainer>
-      <VisitorsOrdersContainer
+      </CardsContainer>
+      <CardsContainer
         cardLable='Invite friend'
         hasDate={false}
         Icon={<FiUsers size={25} color='#103B66' />}
@@ -88,39 +106,24 @@ const RightContent = () => {
         readMoreLink='Start inviting friends!'
       >
         <Typography data-testid='right-section-invite-friend' sx={styles.inviteFriend}>
-          <span style={{ color: '#00C48C' }}>Receive 50 products</span> by inviting a friend who
-          subscribes to a plan. Your friend will receive 30% discount coupon valid any plan.
+          <span style={styles.span}>Receive 50 products</span> by inviting a friend who subscribes
+          to a plan. Your friend will receive 30% discount coupon valid any plan.
         </Typography>
-      </VisitorsOrdersContainer>
-      <VisitorsOrdersContainer
+      </CardsContainer>
+      <CardsContainer
         cardLable='Customer support'
         hasDate={false}
         Icon={<FiHeadphones size={25} color='#103B66' />}
         hasReadMoreArrow={false}
       >
-        <Stack
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-            marginBottom: '1rem',
-          }}
-        >
+        <Stack sx={styles.stackOne}>
           <Avatar sx={styles.avatar} alt='Simone' src={UserImage} />
-          <Typography
-            data-testid='right-section-customer-support'
-            sx={{
-              fontSize: '15px',
-              color: '#103B66',
-              fontWeight: '400',
-            }}
-          >
+          <Typography data-testid='right-section-customer-support' sx={styles.stackTwo}>
             Samson is here to help.
           </Typography>
         </Stack>
         <ContactusButton variant='contained'>Contact Us</ContactusButton>
-      </VisitorsOrdersContainer>
+      </CardsContainer>
     </>
   );
 };

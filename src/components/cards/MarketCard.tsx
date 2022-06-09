@@ -1,23 +1,29 @@
-import { Card, CardActionArea, CardActions, CardContent, Grid, Stack } from '@mui/material';
+import { Card, CardActionArea, CardContent, Grid, Stack } from '@mui/material';
 import { CgExtensionAdd } from 'react-icons/cg';
 import ExtensionCard from './ExtensionCard';
 import ProductCard from './ProductCard';
-import VisitorsOrdersContainer from './VisitorsOrdersContainer';
-// images
-import AppStore from "../assets/appStore.png";
-import GooglePlay from "../assets/googlePlay.png";
+import CardsContainer from '../CardsContainer';
 
+// styles
+const styles = {
+  card: {
+    maxWidth: '100%',
+    marginBottom: 2,
+    backgroundColor: '#F3A35C',
+    borderRadius: '10px',
+  },
+  cardActions: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+};
 
+/**
+ *
+ * @returns
+ */
 const MarketCard = () => {
-  const styles = {
-    card: { maxWidth: '100%', marginBottom: 2, backgroundColor: '#F3A35C' },
-    cardActions: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-evenly',
-      alignItems: 'center',
-    },
-  };
   return (
     <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
       <Grid item xs={16}>
@@ -27,14 +33,10 @@ const MarketCard = () => {
               <ProductCard />
             </CardContent>
           </CardActionArea>
-          <CardActions sx={styles.cardActions}>
-            <img src={AppStore} alt='appStore' />
-            <img src={GooglePlay} alt='GooglePlay' />
-          </CardActions>
         </Card>
       </Grid>
       <Grid item xs={16} data-testid='extensions-marketplace'>
-        <VisitorsOrdersContainer
+        <CardsContainer
           componentHeight='320px'
           cardLable='Extensions Marketplace'
           hasDate={false}
@@ -43,10 +45,10 @@ const MarketCard = () => {
           readMoreLink='Discover all extensions'
         >
           <ExtensionCard />
-        </VisitorsOrdersContainer>
+        </CardsContainer>
       </Grid>
     </Stack>
   );
-}
+};
 
 export default MarketCard;

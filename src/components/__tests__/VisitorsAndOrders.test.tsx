@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import VisitorsAndOrders from "./VisitorsAndOrders";
+import VisitorsAndOrders from "../cards/VisitorsAndOrdersCards";
 import { MemoryRouter } from "react-router-dom";
-import MockTheme from "../mocks/MockTheme";
+import MockTheme from "../../mocks/MockTheme";
 
 
 const setup = () =>

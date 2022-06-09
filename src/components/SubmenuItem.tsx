@@ -1,7 +1,7 @@
-import { Badge, Icon, Stack, styled, Typography } from "@mui/material";
-import { FC, useState } from "react";
-import { Link } from "react-router-dom";
-import { SidebarItem } from "./models/DataStructure";
+import { Badge, Icon, Stack, styled, Typography } from '@mui/material';
+import { FC, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { SidebarItem } from './models/DataStructure';
 
 // PROP YTPES
 type SubmenuItemProps = {
@@ -11,84 +11,75 @@ type SubmenuItemProps = {
 
 // CUSTOM LINK
 const StyledLink = styled(Link)(({ theme }) => ({
-  textDecoration: "none",
+  textDecoration: 'none',
   color: theme.customProps.color,
-  display: "flex",
-  alignItems: "center",
-  padding: "0.5rem 1rem",
-  transition: "all .2s ease-in-out",
-  "&:hover": {
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.5rem 1rem',
+  transition: 'all .2s ease-in-out',
+  '&:hover': {
     borderLeft: `4px solid ${theme.palette.primary.main}`,
     backgroundColor: theme.customProps.background,
     color: theme.palette.primary.main,
   },
-  justifyContent: "space-between",
+  justifyContent: 'space-between',
 }));
 
 // CUSTOM ICON
 const StyledIcon = styled(Icon)({
-  fontSize: "1.5rem",
-  marginRight: "0.8rem",
-  
+  fontSize: '1.5rem',
+  marginRight: '0.8rem',
 });
 
 // CUSTOM LABEL
 const SideMenuLabel = styled(Typography)({
-  marginLeft: ".1rem",
-  fontSize: "0.9rem",
-  display: "inline-block",
+  marginLeft: '.1rem',
+  fontSize: '0.9rem',
+  display: 'inline-block',
 });
 
 // CUSTOM BADGE
 const StyledBadge = styled(Badge)(({ theme }) => ({
-  "& .MuiBadge-badge": {
-    color: "white",
+  '& .MuiBadge-badge': {
+    color: 'white',
     backgroundColor: theme.palette.extra.greenPrimary,
-    marginRight: "0.8rem",
+    marginRight: '0.8rem',
   },
 }));
+// styles
+const styles = {
+  sdmlabel: { paddingTop: '.2em' },
+  item: { backgroundColor: '#E9F8FE' },
+  subnav: { paddingLeft: '2.3rem' },
+};
 
-// SUBMENU COMPONENT
+
+/**
+ * 
+ * @returns 
+ */
 const SubmenuItem: FC<SubmenuItemProps> = ({ item, open }) => {
   const [hasSubnav, setHasSubnav] = useState(false);
   const toggleSubnav = () => {
     setHasSubnav(!hasSubnav);
   };
-  const styles = {
-    sdmlabel: { paddingTop: '.2em' },
-    item: { backgroundColor: '#E9F8FE' },
-    subnav: { paddingLeft: '2.3rem' },
-  };
-  
 
   return (
     <>
       <StyledLink to={item.path} onClick={toggleSubnav}>
-        <Stack direction="row">
+        <Stack direction='row'>
           <StyledIcon>{item.icon}</StyledIcon>
-          <SideMenuLabel sx={styles.sdmlabel}>
-            {open && item.title}
-          </SideMenuLabel>
+          <SideMenuLabel sx={styles.sdmlabel}>{open && item.title}</SideMenuLabel>
         </Stack>
-        {open && (
-          <span>
-            {item?.subnav && hasSubnav ? item?.iconOpened : item?.iconClosed}
-          </span>
-        )}
+        {open && <span>{item?.subnav && hasSubnav ? item?.iconOpened : item?.iconClosed}</span>}
         {open && item?.notification && (
-          <StyledBadge badgeContent={item?.notification} ></StyledBadge>
+          <StyledBadge badgeContent={item?.notification}></StyledBadge>
         )}
       </StyledLink>
       {hasSubnav &&
         item?.subnav?.map((subitem, index) => (
-          <StyledLink
-            key={index}
-            to={subitem.path}
-            sx={styles.item}
-          >
-            <SideMenuLabel sx={styles.subnav}>
-              {subitem.title}
-            </SideMenuLabel>
+          <StyledLink key={index} to={subitem.path} sx={styles.item}>
+            <SideMenuLabel sx={styles.subnav}>{subitem.title}</SideMenuLabel>
           </StyledLink>
         ))}
     </>

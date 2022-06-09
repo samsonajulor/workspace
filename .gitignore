@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 /src/components/SearchInput.tsx
 /src/components/NewsCards.jsx
-/src/components/TextTruncate/clampIt.js
+/src/components/Trimmer/clampIt.js
 /src/useRoutesSetup.tsx

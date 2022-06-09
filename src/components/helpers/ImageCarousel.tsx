@@ -70,10 +70,14 @@ const itemData = [
 ];
 const styles = {
   imageList: { border: 'none', width: '25rem' },
-  image: { width: '152px', height: '150px' },
-  imageListItemBar: { gap: '2px', textAlign: 'left', fontSize: '17px', color: '#103B66' },
+  image: { width: '10.3rem', height: '10.3rem' },
+  imageListItemBar: { gap: '2px', textAlign: 'left', color: '#103B66' },
 };
 
+/**
+ * 
+ * @returns 
+ */
 export default function StickyHeadTable() {
   return (
     <ImageList sx={styles.imageList} className='Carousel__Image' cols={itemData.length} gap={110}>

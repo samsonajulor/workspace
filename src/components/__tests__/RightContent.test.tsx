@@ -1,17 +1,17 @@
 import { render, screen } from "@testing-library/react";
-import VisitorsOrdersContainer from "./VisitorsOrdersContainer";
+import CardsContainer from '../CardsContainer';
 import { MemoryRouter } from "react-router-dom";
-import MockTheme from "../mocks/MockTheme";
-import RightContent from './RightContent';
+import MockTheme from "../../mocks/MockTheme";
+import RightContent from '../RightContent';
 
 describe("Content", () => {
   it("renders  Configure your shop component", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable='Configure your shop'>
+          <CardsContainer cardLable='Configure your shop'>
             <RightContent />
-          </VisitorsOrdersContainer>
+          </CardsContainer>
         </MockTheme>
       </MemoryRouter>
     );
@@ -24,9 +24,9 @@ describe("Content", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable='Trustpilot'>
+          <CardsContainer cardLable='Trustpilot'>
             <RightContent />
-          </VisitorsOrdersContainer>
+          </CardsContainer>
         </MockTheme>
       </MemoryRouter>
     );
@@ -37,9 +37,9 @@ describe("Content", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable='Invite friend'>
+          <CardsContainer cardLable='Invite friend'>
             <RightContent />
-          </VisitorsOrdersContainer>
+          </CardsContainer>
         </MockTheme>
       </MemoryRouter>
     );
@@ -52,9 +52,9 @@ describe("Content", () => {
     render(
       <MemoryRouter>
         <MockTheme>
-          <VisitorsOrdersContainer cardLable='Customer support'>
+          <CardsContainer cardLable='Customer support'>
             <RightContent />
-          </VisitorsOrdersContainer>
+          </CardsContainer>
         </MockTheme>
       </MemoryRouter>
     );

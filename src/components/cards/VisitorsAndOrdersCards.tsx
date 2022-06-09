@@ -1,8 +1,7 @@
 import { Grid, Stack, Typography } from '@mui/material';
 import { AiOutlineEye, AiOutlineUnorderedList } from 'react-icons/ai';
-import VisitorsOrdersContainer from './VisitorsOrdersContainer';
+import CardsContainer from '../CardsContainer';
 
-const VisitorsAndOrders = () => {
   const styles = {
     h4: {
       fontSize: '2rem',
@@ -46,10 +45,15 @@ const VisitorsAndOrders = () => {
       fontWeight: '700',
     },
   };
+/**
+ * 
+ * @returns 
+ */
+const VisitorsAndOrders = () => {
   return (
     <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
       <Grid item xs={16} data-testid="visitors">
-        <VisitorsOrdersContainer
+        <CardsContainer
           componentHeight="170px"
           cardLable="Visitors"
           hasDate={true}
@@ -63,10 +67,10 @@ const VisitorsAndOrders = () => {
           >
             1824
           </Typography>
-        </VisitorsOrdersContainer>
+        </CardsContainer>
       </Grid>
       <Grid item xs={16} data-testid="orders">
-        <VisitorsOrdersContainer
+        <CardsContainer
           componentHeight="170px"
           cardLable="Orders"
           hasDate={true}
@@ -106,7 +110,7 @@ const VisitorsAndOrders = () => {
               € 1893, 24
             </Typography>
           </Stack>
-        </VisitorsOrdersContainer>
+        </CardsContainer>
       </Grid>
     </Stack>
   );

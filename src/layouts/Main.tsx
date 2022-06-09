@@ -30,8 +30,8 @@ import SubmenuItem from "../components/SubmenuItem";
 import SelectInput from "../components/SelectInput";
 import RightContent from '../components/RightContent';
 import {AllNewsList} from "../components/AllNewsList";
-import VisitorsAndOrders from "../components/VisitorsAndOrders";
-import MarketCard from '../components/MarketCard';
+import VisitorsAndOrders from "../components/cards/VisitorsAndOrdersCards";
+import MarketCard from '../components/cards/MarketCard';
 
 
 const drawerWidth: number = 255;
@@ -218,7 +218,7 @@ function Dashboard() {
                 }}
                 maxWidth='xl'
               >
-                <Typography variant='h4'>Welcome Mario!</Typography>
+                <Typography variant='h4'>Welcome Hakeem!</Typography>
                 <Box
                   sx={{
                     py: [2],
@@ -243,7 +243,7 @@ function Dashboard() {
                 <Grid item xs={16} md={12} lg={11} xl={11}>
                   <VisitorsAndOrders />
                   <MarketCard />
-                  <Stack sx={{ backgroundColor: 'white' }} spacing={2}>
+                  <Stack spacing={2}>
                     <AllNewsList />
                   </Stack>
                 </Grid>

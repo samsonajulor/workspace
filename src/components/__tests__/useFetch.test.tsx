@@ -1,9 +1,9 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import { server, rest } from "../mocks/server";
-import { AllNewsList } from "../components/AllNewsList";
+import { server, rest } from "../../mocks/server";
+import { AllNewsList } from "../AllNewsList";
 import { MemoryRouter } from "react-router-dom";
-import MockTheme from "../mocks/MockTheme";
+import MockTheme from "../../mocks/MockTheme";
 
 // const component = <All
 const setup = () =>

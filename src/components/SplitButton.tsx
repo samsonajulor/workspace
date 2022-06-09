@@ -29,6 +29,10 @@ const StyledBGroupButton = styled(ButtonGroup)(({ theme }) => ({
   },
 }));
 
+/**
+ * 
+ * @returns 
+ */
 const SplitButton = () => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLDivElement>(null);
