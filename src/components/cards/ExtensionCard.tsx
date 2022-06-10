@@ -12,7 +12,7 @@ const styles = {
  */
 export default function ExtensionCard() {
   return (
-    <Box sx={styles.box}>
+    <Box className='Carousel__Image' sx={styles.box}>
       <Carousel />
     </Box>
   );

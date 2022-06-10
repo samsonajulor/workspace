@@ -25,7 +25,7 @@ const styles = {
  */
 const MarketCard = () => {
   return (
-    <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
+    <Stack className='Carousel__Image' direction={{ xs: 'column', md: 'row' }} spacing={2}>
       <Grid item xs={16}>
         <Card sx={styles.card}>
           <CardActionArea>

@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@mui/material/styles";
-import {mdTheme} from "../layouts/Main";
+import {mdTheme} from "../layouts/Dashboard";
 // import { createMuiTheme } from "@material-ui/core";
 // import { ThemeProvider } from "@material-ui/core/styles";
 

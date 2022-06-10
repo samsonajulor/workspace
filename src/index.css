@@ -6,13 +6,13 @@ body {
   font-family: 'Noto Sans HK', 'Source Sans Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scrollbar-width: none; 
-  -ms-overflow-style: none;
+  scrollbar-width: none !important; 
+  -ms-overflow-style: none !important;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 /* take out the scroll bar code */
 
@@ -22,12 +22,12 @@ code {
 }
 
 .Carousel__Image {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;; 
 } 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .Carousel__Image::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }

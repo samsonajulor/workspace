@@ -16,7 +16,6 @@ const CardTitle = styled(Typography)(({ theme }) => ({
   lineHeight: '13px',
   lineClamp: 2,
   textOverflow: 'ellipsis',
-  overflow: 'hidden',
   textTransform: 'uppercase',
   color: theme.palette.primary.main,
 }));
@@ -36,7 +35,7 @@ const CardSubtext = styled(Link)(({ theme }) => ({
 }));
 const styles = {
   card: { display: 'flex', borderRadius: '0px' },
-  skeleton: { bgcolor: 'grey.900' },
+  skeleton: { bgcolor: '#E5E5E5' },
   cardMedia: { width: 151 },
   box: { display: 'flex', flexDirection: 'column' },
   cardContent: { flex: '1 0 auto', maxWidth: '256.56px' },
@@ -47,8 +46,6 @@ const styles = {
  * @returns 
  */
 const NewsCard = () => {
-  console.log('NewsCard Rerndering');
-
   const { state } = useContext<any>(NewsContext);
 
   const loading = state.isLoading;

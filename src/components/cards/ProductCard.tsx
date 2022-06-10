@@ -28,7 +28,13 @@ const styles = {
 const ProductCard = () => {
   return (
     <>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={16}>
+      <Grid
+        className='Carousel__Image'
+        container
+        rowSpacing={1}
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+        columns={16}
+      >
         <Grid item xs={8} lg={8}>
           <Typography variant='h5' sx={styles.typo}>
             Sell your products on your exclusive APP published on the stores

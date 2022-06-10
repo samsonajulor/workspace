@@ -11,7 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router>
+      <div className='Carousel__Image'>
         <App />
+      </div>
     </Router>
   </React.StrictMode>
 );

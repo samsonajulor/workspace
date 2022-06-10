@@ -8,7 +8,7 @@ import UserImage from "../assets/user.webp";
 
 
 const ContactusButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: 'theme.palette.primary.main',
   color: "white",
   fontSize: ".7rem",
   textTransform: "none",
