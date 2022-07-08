@@ -1,0 +1,48 @@
+[
+    {
+        "bookId": 7,
+        "dateUploaded": 1637529159762,
+        "Title": "agadns;gad",
+        "Author": "Bsdmf.ngfga",
+        "datePublished": "2020-0-12T19:0455.455z",
+        "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
+        "pageCount": 574,
+        "Genre": "d.m,fds.fd",
+        "Publisher": "dgn;sdfj;aifg",
+        "dateEdited": "1637532217569"
+    },
+    {
+        "bookId": 7,
+        "dateUploaded": 1637531266051,
+        "Title": "agadns;gad",
+        "Author": "Bsdmf.ngfga",
+        "datePublished": "2020-0-12T19:0455.455z",
+        "Description": "A Promised Land is a memoir by Barack Obama, the 44th President of the United States from 2009 to 2017. Published on November 17, 2020, it is the first of a planned two-volume series",
+        "pageCount": 574,
+        "Genre": "d.m,fds.fd",
+        "Publisher": "dgn;sdfj;aifg",
+        "dateEdited": "1637532217569"
+    },
+    {
+        "bookId": 6,
+        "dateUploaded": 1637610172315
+    },
+    {
+        "bookId": 7,
+        "dateUploaded": 1637610325187
+    },
+    {
+        "bookId": 8,
+        "dateUploaded": 1637610333376
+    },
+    {
+        "bookId": 9,
+        "dateUploaded": 1637612267548,
+        "email": "francisco@example.com"
+    },
+    {
+        "bookId": 10,
+        "dateUploaded": 1637612272310,
+        "email": "francisco@example.com"
+    }
+]
