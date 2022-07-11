@@ -19,3 +19,4 @@ List of Branches
 - frontend-reactjs/todo-list - a an extract from fuse react dashboard
 - nodebackend/bookslibraryapi - 
 - misc/linkedin-assessments
+- reactgraphql/project-manager - this is a project management application created with graphql, mongodb, node, express, react, apollo server
