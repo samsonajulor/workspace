@@ -1,9 +1,9 @@
 name: NASA Project CI
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ fullstack/nasa-project ]
+  # pull_request:
+  #   branches: [ main ]
 jobs:
   build:
     env:
@@ -27,3 +27,6 @@ jobs:
       - run: npm install
       - run: npm run build --prefix client
       - run: npm test
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
