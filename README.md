@@ -10,7 +10,6 @@ Layered Architecture to Design iOS Apps: https://www.vadimbulavin.com/layered-ar
 separation of concerns: https://en.wikipedia.org/wiki/Separation_of_concerns | https://nalexn.github.io/separation-of-concerns/
 map: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 effects: https://github.com/arwes/arwes
-
 ## Getting Started
 
 1. Ensure you have Node.js installed.
