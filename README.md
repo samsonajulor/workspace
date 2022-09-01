@@ -60,3 +60,19 @@ set BUILD_PATH=../server/public&& react-scripts build
 Rather than the bash version:
 
 BUILD_PATH=../server/public react-scripts build
+
+# Settin Port on Windows for the server
+If you're using the default Windows shell, the syntax to set an environment variable like PORT is slightly different than what we saw in the previous video. To set PORT in your package.json on Windows, you'll want to write:
+
+"start": "set PORT=5000&& node src/server.js"
+
+Instead of:
+
+"start": "PORT=5000 node src/server.js"
+
+Alternatively, there's the cross-env NPM package which will work all platforms. Both options work!
+
+##The app was built with the following commands
+step 1:'docker build . -t samsonajulor/nasa_project'
+step 2: create and run a container from the image with - 'docker run -it -p 8000:8000 samsonajulor/nasa_project'
+step 3: push the container to the hub with - 'docker push samsonajulor/nasa_project'
