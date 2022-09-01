@@ -1,4 +1,6 @@
 # NASA PROJECT
+
+hosted on aws: http://3.83.34.247:8000/
 The following resources were used to create this project:
 
 architectural design: https://www.lucidchart.com/pages
