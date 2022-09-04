@@ -1,6 +1,6 @@
 # NASA PROJECT
 
-hosted on aws: http://3.83.34.247:8000/
+hosted on aws: http://3.83.34.247:8000/ or http://localhost:8000 after pulling the image from dockerhub
 
 The following resources were used to create this project:
 
