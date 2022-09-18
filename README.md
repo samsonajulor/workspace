@@ -23,3 +23,5 @@ List of Branches
 - tutorials/java-methods
 - toptal_test
 - dare/workpace_and_documentation
+- datascience/gaussian_distribution
+- software_development/holberton_schools
