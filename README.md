@@ -25,3 +25,4 @@ List of Branches
 - dare/workpace_and_documentation
 - datascience/gaussian_distribution
 - software_development/holberton_schools
+- project/react-projects
