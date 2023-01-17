@@ -26,3 +26,4 @@ List of Branches
 - datascience/gaussian_distribution
 - software_development/holberton_schools
 - project/react-projects
+- backend/js-design-patterns
