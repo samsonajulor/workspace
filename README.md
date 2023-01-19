@@ -28,3 +28,4 @@ List of Branches
 - project/react-projects
 - backend/js-design-patterns
 - algorithms/js-ds-and-algos
+- typescript-codes
