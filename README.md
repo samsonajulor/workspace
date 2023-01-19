@@ -27,3 +27,4 @@ List of Branches
 - software_development/holberton_schools
 - project/react-projects
 - backend/js-design-patterns
+- algorithms/js-ds-and-algos
