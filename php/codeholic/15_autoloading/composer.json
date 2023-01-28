@@ -1,0 +1,17 @@
+{
+    "name": "samsonajulor/15_autoloading",
+    "authors": [
+        {
+            "name": "Samson Ajulor",
+            "email": "samsonajulor@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}
