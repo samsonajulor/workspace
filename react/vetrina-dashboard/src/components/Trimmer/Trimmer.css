@@ -1,0 +1,27 @@
+.text-truncate-multi-line {
+  overflow: hidden;
+}
+
+.text-truncate-multi-line p {
+    padding: 0;
+    margin: 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.text-truncate-single-line {
+  overflow: hidden;
+}
+
+.text-truncate-single-line p {
+    padding: 0;
+    margin: 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
