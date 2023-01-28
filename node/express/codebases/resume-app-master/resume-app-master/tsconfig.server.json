@@ -1,0 +1,45 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "types": [
+            "node",
+            "express",
+            "body-parser",
+            "helmet",
+            "compression",
+            "winston",
+            "sequelize",
+            "validator",
+            "bcrypt",
+            "passport",
+            "jsonwebtoken"
+        ],
+        "baseUrl": "./node_modules",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "paths": {
+            "*": [
+                "./*",
+                "../src/types/",
+                "../typings/"
+            ]
+        },
+    },
+    "exclude": [
+        "node_modules",
+        "public",
+        "dist",
+        "config",
+        "mocha",
+        "src/client/**",
+    ],
+    "include": [
+        "src/server/*.ts",
+        "src/server/**/*.ts",
+        "src/server/**/**/.ts",
+        "src/server/**/**/**/*.ts",
+        "src/server/**/**/**/**/*.ts",
+        "src/server/**/**/**/**/**/*.ts",
+        "src/types"
+    ]
+}

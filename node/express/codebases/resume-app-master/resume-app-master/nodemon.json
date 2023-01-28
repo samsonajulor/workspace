@@ -1,0 +1,5 @@
+{
+	"verbose": false,
+	"watch": ["./dist/"],
+	"exec": "node ./dist/server-bundle.js"
+}

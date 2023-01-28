@@ -1,0 +1,6 @@
+node_modules
+build
+dist
+private.key
+public.key
+postgres-data
