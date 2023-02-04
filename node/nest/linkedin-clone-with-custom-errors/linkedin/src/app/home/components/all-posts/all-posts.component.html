@@ -1,0 +1,81 @@
+<div *ngIf="allLoadedPosts.length > 0" class="all-posts-container">
+  <ion-content>
+    <ion-list>
+      <ion-card *ngFor="let post of allLoadedPosts">
+        <ion-grid>
+          <ion-row class="ion-align-items-center ion-justify-content-center">
+            <ion-col size="auto" class="ion-padding">
+              <ion-avatar
+                style="cursor: pointer"
+                [routerLink]="['/', 'home', post.author.id]"
+              >
+                <ion-img [src]="$any(post).fullImagePath"></ion-img>
+              </ion-avatar>
+            </ion-col>
+            <ion-col>
+              <div
+                style="cursor: pointer"
+                [routerLink]="['/', 'home', post.author.id]"
+                class="full-name"
+              >
+                {{ post.author.firstName }} {{ post.author.lastName }}
+              </div>
+              <div class="role">Full Stack Developer</div>
+              <div class="meta-data">
+                1d<ion-icon name="ellipse"></ion-icon> Edited
+                <ion-icon name="ellipse"></ion-icon>
+                <ion-icon color="dark" name="globe-outline"></ion-icon>
+              </div>
+            </ion-col>
+            <ion-col
+              *ngIf="(userId$ | async) === post.author.id"
+              style="margin-top: -32px"
+              class="ion-text-right"
+            >
+              <ion-icon
+                (click)="presentUpdateModal(post.id)"
+                style="font-size: 18px; cursor: pointer"
+                color="dark"
+                name="create-outline"
+              ></ion-icon>
+              <ion-icon
+                (click)="deletePost(post.id)"
+                style="font-size: 18px; cursor: pointer"
+                color="danger"
+                name="trash-outline"
+              ></ion-icon>
+            </ion-col>
+          </ion-row>
+          <p class="post-body">{{ post.body }}</p>
+          <ion-row>
+            <ion-button color="medium" fill="clear">
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+              <ion-text>Like</ion-text>
+            </ion-button>
+            <ion-button color="medium" fill="clear">
+              <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+              <ion-text>Comment</ion-text>
+            </ion-button>
+            <ion-button color="medium" fill="clear">
+              <ion-icon name="arrow-redo-outline"></ion-icon>
+              <ion-text>Share</ion-text>
+            </ion-button>
+            <ion-button color="medium" fill="clear">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              <ion-text>Send</ion-text>
+            </ion-button>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-list>
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data..."
+      >
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+  <div class="hide-scroll"></div>
+</div>
