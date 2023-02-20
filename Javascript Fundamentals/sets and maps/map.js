@@ -9,7 +9,7 @@
 // a map is a collection of keyed data items
 // a map is different from an object because it allows us to use any type of key
 
-const data ={
+const data = {
   "name": "map",
   "age": 30,
   1: "hello"
@@ -52,6 +52,40 @@ map2.set('age', 30);
 map2.set(true, 'hello');
 map2.set(function toString(){}, 'goodbye');
 
-map2.values
-map2.forEach
+/** Map Methods */
+// get()	Gets the value for a key in a Map
+console.log(map2.get('name'));
+
+// clear()	Removes all the elements from a Map
+// console.log(map2.clear());
+// console.log(map2)
+
+// size	Returns the number of elements in a Map
+console.log(map2.size)
+
+// delete()	Removes a Map element specified by a key
+// console.log(map2.delete('name'));
+// console.log(map2.get('name'))
+
+// has()	Returns true if a key exists in a Map
+console.log(map2.has('name'));
+console.log(map2.has('age'));
+
+// forEach()	Invokes a callback for each key/value pair in a Map
+console.log(
+  map2.forEach((value, key) => {
+    console.log(key);
+    console.log('>>>>>>');
+    console.log(value);
+  })
+)
+
+// entries()	Returns an iterator object with the [key, value] pairs in a Map
+console.log((Array.from(map2.entries())));
+
+// keys()	Returns an iterator object with the keys in a Map
+console.log((Array.from(map2.keys())));
+
+// values()	Returns an iterator object of the values in a Map
+console.log((Array.from(map2.values())));
 
