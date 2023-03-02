@@ -314,3 +314,4 @@ In this guide, we have built a flexible foundation for serving PHP websites and 
 <br>
 
 ### Credit: This guide was inspired by Digital Ocean
+![video tutorial](https://www.youtube.com/watch?v=ucJqOvS7wB8)

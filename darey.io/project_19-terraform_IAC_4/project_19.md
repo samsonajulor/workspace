@@ -80,3 +80,5 @@ As your Terraform code base grows, your DevOps team might want to create you own
 4. Create a workspace for the configuration
 5. Deploy the infrastructure
 6. Destroy your deployment
+
+![done](https://www.youtube.com/watch?v=nCemvjcKuIA&list=PLtPuNR8I4TvmKE9LJI11vALrnrXt8wLXD&index=14)
