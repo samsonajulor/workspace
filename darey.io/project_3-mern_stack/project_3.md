@@ -675,4 +675,4 @@ Credits:
 This guide was inspired by Digital Ocean
 Educative.io
 
-![video tutorial](https://www.youtube.com/watch?v=56UAAenMEx8)
+[video tutorial](https://www.youtube.com/watch?v=56UAAenMEx8)

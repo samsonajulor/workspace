@@ -347,4 +347,4 @@ Fill out your DB credentials:
 
 ![wordpress site](./images/wordpress%20site.jpg)
 
-
+[video tutorial](https://www.youtube.com/watch?v=fJnjuG-CK4g)

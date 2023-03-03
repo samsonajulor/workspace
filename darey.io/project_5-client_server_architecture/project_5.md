@@ -77,4 +77,4 @@ Check that you have successfully connected to a remote MySQL server and can perf
 Show databases;
 ![sql connection remote](./images/show%20databases.jpg)
 
-![video tutorial](https://www.youtube.com/watch?v=jSPslwhYEG0)
+[video tutorial](https://www.youtube.com/watch?v=jSPslwhYEG0)

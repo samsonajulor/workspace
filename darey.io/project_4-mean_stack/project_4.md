@@ -296,4 +296,4 @@ The server is now up and running, we can connect it via port 3300. You can launc
 
 ![project four completed](./images/project_four_completed.jpg)
 
-![video tutorial](https://www.youtube.com/watch?v=ze1QUNXNUYE)
+[video tutorial](https://www.youtube.com/watch?v=ze1QUNXNUYE)
