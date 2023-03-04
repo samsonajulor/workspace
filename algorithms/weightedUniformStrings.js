@@ -1,4 +1,181 @@
 /**
+ * weighted uniform strings
+ * @param {str} - string
+ * @param {queries} - array of numbers
+ * @returns {array} - array of 'Yes' or 'No' depending on whether the string has a uniform subsequence of the given weight
+ * methods used: set, charAt, charCodeAt
+ * 
+ * what is a subsequence?
+ * e.g. 'hello' -> h, e, l, l, o, hello, eo,  el
+ * ol - is not a subsequence of hello
+ * 
+ * what is a uniform subsequence?
+ * e.g. 'hello' -> ll, h, e, l, l, o,
+ * 
+ * what is a substring?
+ * e.g. 'hello' -> hel, ell, ello,
+ * eo is not a substring
+ * hl is not a substring
+ * 
+ * @example {weightedUniformStrings('abccddde', [1, 3, 12, 5, 9, 10]) // ['Yes', 'Yes', 'Yes', 'Yes', 'No', 'No']}
+ * 
+ * a - 1
+ * b - 2
+ * c - 3+3 = 6
+ * d - 4 + 4 + 4 = 12
+ * e - 5
+ * 
+ * {
+ * 1,
+ * 2,
+ * 3
+ * 6,
+ * 4,
+ * 8,
+ * 12,
+ * 5
+ * }
+ * steps:
+Create a set to store the weights of all possible uniform subsequences in the string.
+
+Traverse the string, keeping track of the current character and its weight.
+
+If the current character is different from the previous character, reset the current weight to the weight of the current character and add it to the set.
+
+If the current character is the same as the previous character, add its weight to the current weight and add the resulting weight to the set.
+
+
+Repeat steps 3-4 until the end of the string is reached.
+
+For each query of the form "is there a uniform subsequence of weight w in the string?", check if w is in the set. If it is, the answer is "Yes". Otherwise, the answer is "No".
+ */
+
+// const text = 'abccddde';
+
+// console.log(text.charCodeAt(4) - 96);
+
+
+//  * @example {weightedUniformStrings('abccddde', [1, 3, 12, 5, 9, 10]) // ['Yes', 'Yes', 'Yes', 'Yes', 'No', 'No']}
+function weightedUniformStrings(str, weightQueries) {
+  const weights = new Set();
+  let prevChar = '';
+  let currWeight = 0;
+
+  for (const char of str) {
+    if (char !== prevChar) {
+      currWeight = char.charCodeAt(0) - 96;
+      console.log(currWeight)
+    } else {
+      currWeight += char.charCodeAt(0) - 96;
+      console.log(currWeight) //  1 + 1
+    }
+    weights.add(currWeight);
+    prevChar = char;
+  }
+  console.log(weights);
+  let result = [];
+  for (const weight of weightQueries) {
+    if (weights.has(weight)) {
+      result.push('Yes');
+    } else {
+      result.push('No');
+    }
+
+    return result;
+}
+}
+// time complexity O(n + m)
+// where n is the length of the string and m is the length of the queries array.
+console.log(weightedUniformStrings('abccddde', [1, 3]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
  * what is the weighted uniform string?
  * This involves computing whether a given string has a uniform subsequence of a given weight. The weight of a character is given by its position in the alphabet. For example, the weight of the character 'a' is 1, 'b' is 2, 'c' is 3, and so on.
  * 
@@ -21,30 +198,30 @@
  * 5. create an array of 'Yes' or 'No' depending on whether the queries array contains the weights of the uniform subsequence of the given string
  */
 
-function weightedUniformStrings(s, queries) {
-  let weights = new Set();
-  let prevChar = '';
-  let currWeight = 0;
-  for (let i = 0; i < s.length; i++) {
-    let char = s.charAt(i);
-    if (char !== prevChar) {
-      currWeight = char.charCodeAt(0) - 96;
-    } else {
-      currWeight += char.charCodeAt(0) - 96;
-    }
-    weights.add(currWeight);
-    prevChar = char;
-  }
-  let result = [];
-  for (let j = 0; j < queries.length; j++) {
-    if (weights.has(queries[j])) {
-      result.push('Yes');
-    } else {
-      result.push('No');
-    }
-  }
-  return result;
-}
+// function weightedUniformStrings(s, queries) {
+//   let weights = new Set();
+//   let prevChar = '';
+//   let currWeight = 0;
+//   for (let i = 0; i < s.length; i++) {
+//     let char = s.charAt(i);
+//     if (char !== prevChar) {
+//       currWeight = char.charCodeAt(0) - 96;
+//     } else {
+//       currWeight += char.charCodeAt(0) - 96;
+//     }
+//     weights.add(currWeight);
+//     prevChar = char;
+//   }
+//   let result = [];
+//   for (let j = 0; j < queries.length; j++) {
+//     if (weights.has(queries[j])) {
+//       result.push('Yes');
+//     } else {
+//       result.push('No');
+//     }
+//   }
+//   return result;
+// }
 
 
 // function weightedUniformStrings(str, queries) {
@@ -65,4 +242,4 @@ function weightedUniformStrings(s, queries) {
 //   return queries.map(query => newStrWeights.includes(query) || uniformSubsequenceWeights.includes(query) ? 'Yes' : 'No');
 // }
 
-console.log(weightedUniformStrings('abccddde', [1, 3, 12, 5, 9, 10]));
+// console.log(weightedUniformStrings('abccddde', [1, 3, 12, 5, 9, 10]));
