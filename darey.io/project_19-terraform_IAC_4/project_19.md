@@ -61,6 +61,8 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
 
 Switch to "Runs" tab and click on "Queue plan manually" button. If planning has been successful, you can proceed and confirm Apply – press "Confirm and apply", provide a comment and "Confirm plan"
 
+![confirm plan](./images/run%20plan%20successful.png)
+
 Check the logs and verify that everything has run correctly. Note that Terraform Cloud has generated a unique state version that you can open and see the codes applied and the changes made since the last run.
 
 7. Test automated `terraform plan`
