@@ -1,0 +1,10 @@
+#!/bin/sh
+
+npm run lint
+if [ $? -eq 0 ]
+then
+  echo "Pre-commit eslint check for was successfull."
+else
+  echo "PRE-COMMIT ESLINT CHECK FAILED" && echo "Pre-commit eslint check failed. Please fix all problems with npm lint:fix script."
+  exit 1
+fi

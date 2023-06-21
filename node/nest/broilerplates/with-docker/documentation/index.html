@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>nestjs-postgres-starter documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">nestjs-postgres-starter documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h2 id="nestjs--postgresql--docker-starter-template">NestJS + PostgreSQL + Docker Starter Template</h2>
+<h3 id="description">Description</h3>
+<p>Starter Template for building apps with Nest.js backend and PostgreSQL database, wrapped in docker containers.<br/>
+Main purpose of this starter is to save developers time, which is usually spend on creating basic skeletons, configs and getting all together when building the apps.</p>
+<h3 id="whats-inside">What&#39;s inside</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> PostgreSQL local database</li>
+<li><input checked="" disabled="" type="checkbox"> Nest.js as backend server</li>
+<li><input checked="" disabled="" type="checkbox"> Environments are splitted (development/production)</li>
+<li><input checked="" disabled="" type="checkbox"> Configs setup</li>
+<li><input checked="" disabled="" type="checkbox"> Some basic backend examples(module+service+controller+entity)</li>
+<li><input checked="" disabled="" type="checkbox"> Git hooks support (pre-commit + commit-msg)</li>
+<li><input checked="" disabled="" type="checkbox"> Conventional Commits Support</li>
+<li><input checked="" disabled="" type="checkbox"> Docker + docker-compose configs</li>
+<li><input checked="" disabled="" type="checkbox"> Bash scripts for one-command docker launch</li>
+<li><input checked="" disabled="" type="checkbox"> Pm2 support for production</li>
+<li><input checked="" disabled="" type="checkbox"> Migrations support for production</li>
+</ul>
+<h3 id="before-use">Before use</h3>
+<h5 id="envs">Envs</h5>
+<p>You need to setup envs before using the starter.<br/></p>
+<div><pre class="line-numbers"><code class="language-bash">$ touch .env # create env file
+
+# check .env.example for envs names
+# setup envs in .env according to prod/dev/debug mode</code></pre></div><h5 id="git-hooks">Git Hooks</h5>
+<p>Starter has git hooks support and alrady has pre-commit and commit hooks added:</p>
+<ul>
+<li>pre-commit hook start eslint check on backend. if eslint fails, the commit won&#39;t happen with errors logs output and tip what to do. Hooks can be updated to add some actions, e.g. eslint for possible frontend.</li>
+<li>commit-msg hook checks if the commit message corresponds with conventional commits. Starter uses <a href="https://github.com/qoomon/git-conventional-commits">git-conventional-commits</a>. Please check it&#39;s docs and modify settings if needed.<br/>
+NOTE: <br/>
+To use conventional commits:</li>
+</ul>
+<div><pre class="line-numbers"><code class="language-bash">  # install package
+  npm install --global git-conventional-commits
+
+  # give access to hooks files to make it work
+  chmod +x .git-hooks/commit-msg
+  chmod +x .git-hooks/pre-commit
+</code></pre></div><h3 id="how-to-use">How to use</h3>
+<p>Starter has 2 docker containers - one for database and one for backend. All configs are set up. Everything can be started via docker-compose one-line commands.<br/>
+Note: you may need &quot;sudo&quot; for bash.</p>
+<ul>
+<li><p>Before first launch:<br/></p>
+<div><pre class="line-numbers"><code class="language-bash"> # before fisrt start
+ npm install # to avoid ts warnings in ide
+[sudo] docker-compose build # build containers, also use it for rebuilding existing containers</code></pre></div></li>
+<li><p>Start/stop app:<br/></p>
+<div><pre class="line-numbers"><code class="language-bash">  [sudo] docker-compose up # start containers
+
+  # Note: you can run container in a detached mode
+  [sudo] docker-compose up -d
+  # To check containers logs
+  [sudo] docker-compose logs -f
+  # To stop containers
+  [sudo] docker-container down # stops and removes containers
+  # To restart containers
+  [sudo] docker-container restart</code></pre></div><p>NOTE:<br/>
+In dev mode migrations are applied automatically via nest-typeorm synchronize prop.<br/>
+In production mode migrations are generated via typeorm cli together with the server launch when launching containers. No need to create or generate it manually before launch of server, everything can be done automatically when containers start.</p>
+</li>
+</ul>
+<h3 id="whats-next">What&#39;s next</h3>
+<p>Main purpose of this starter template is to rid developers of creating the basic projects skeleton and spending a lot of time with setting up basic projects configs.<br/>
+Feel free to use this starter template for building own apps, modify it as you need and actually change it whatever you like to fit your project demands.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
