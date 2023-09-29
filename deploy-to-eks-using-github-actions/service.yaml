@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: primuslearning
+  name: zacrac
 spec:
   selector:
-    app: primuslearning
+    app: zacrac
   ports:
     - protocol: TCP
       port: 80
